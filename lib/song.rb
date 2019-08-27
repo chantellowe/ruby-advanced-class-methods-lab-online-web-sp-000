@@ -57,7 +57,7 @@ class Song
     binding.pry
     arr = []
     song = self.new
-    arr << filename.split(" - ", ".mp3")
+    arr << filename.split(" - ")
     arr[0] = artist_name
     arr[1] = name
   end
