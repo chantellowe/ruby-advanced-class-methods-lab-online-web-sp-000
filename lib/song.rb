@@ -54,6 +54,7 @@ class Song
   end
   
   def self.new_from_filename(filename)
+    binding.pry
     arr = []
     song = self.new
     arr << filename.split(" - ", ".mp3")
