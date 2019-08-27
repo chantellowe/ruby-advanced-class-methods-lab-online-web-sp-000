@@ -51,7 +51,7 @@ class Song
     @@all.sort{ |a,b| a.name <=> b.name }
   end
   
-  def self.new_from_filename(name)
+  def self.new_from_filename(name, artist_name)
     arr = []
     song = self.new
     song.artist_name = artist_name
