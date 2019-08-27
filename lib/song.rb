@@ -51,11 +51,10 @@ class Song
     @@all.sort_by{ |song| song.name }
   end
   
-  def self.new_from_filename(name, artist_name)
+  def self.new_from_filename(filename)
     arr = []
     song = self.new
-    song.artist_name = artist_name
-    arr << song.split(" - ", ".mp3")
+    arr << filename.split(" - ", ".mp3")
     arr[0] = artist_name
     arr[1] = name
   end
